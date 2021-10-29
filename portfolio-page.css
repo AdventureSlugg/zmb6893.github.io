@@ -1,0 +1,92 @@
+header {
+    background-color: #25243d;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+body {
+    margin: 0%;
+    background-color: #171618;
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+    width: 30%;
+    border-color: #25242c;
+  }
+
+.header-btn-group button {
+    background-color: #25243d; /* Green background */
+    border: 1px solid #191922; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    width: 20%;
+    height: 50px;
+}
+
+.header-btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.header-btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+.header-btn-group button:hover {
+    background-color: rgb(93, 200, 207);
+}
+
+.jumbotron{
+    background-image: url(images/jumbo-background.jpg);
+    background-color: #25242c;
+    color: #FFFF;
+    max-width: 100cm;
+    max-height: 100ch;
+    text-align: center;
+}
+
+.subtitle {
+    color: rgb(93, 200, 207);
+}
+
+.about-me {
+    text-align: center;
+}
+
+.roundedImage{
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+}
+
+.body-text{
+    text-align: center;
+    color: aliceblue;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+.project{
+    background-color: darkslategray;
+    padding-right: 30%;
+    padding-left: 30%;
+}
+
+
+.significant {
+    color:aquamarine;
+}
+
+.carousel-inner iframe {
+    margin: auto;
+  }
