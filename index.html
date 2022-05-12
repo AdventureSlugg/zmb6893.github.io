@@ -14,6 +14,7 @@
 		<header>
 			<div class="header-btn-group">
 				<button class = "header-btn" onclick="document.getElementById('aboutMe').scrollIntoView();">About me</button>
+				<button class = "header-btn" onclick="document.getElementById('tutoring').scrollIntoView();">Tutoring</button>
 				<button class = "header-btn" onclick="document.getElementById('projects').scrollIntoView();">Projects</button>
 				<button class = "header-btn" onclick="document.getElementById('resume').scrollIntoView();">Resume</button>
 				<button class = "header-btn" onclick="document.getElementById('social').scrollIntoView();">Social Media</button>
@@ -24,14 +25,33 @@
 			<br><br><br>
 			<h1 class = "title">Zoe Bingham</h1>
 			<h2>A Programmer's Portfolio</h2>
-			<img src = "images/ZoeBinghamHeadShot.jpeg" alt = "Zoe Bingham" class = "roundedImage">
 			<br>
 			<br>
 		</div>
 		<br id = "aboutMe" ><br>
 		<div class =  "about-me">
 			<h1 class = "subtitle">About Me</h1>
-			<h3 class= "body-text"> Hi, I'm Zoe and I love learning how to build things. I am a Second Year in the Software Engineering Program at Rochester Institute of Technology. I am currently seeking co-op for summer 2022.</h3>
+			<div class = "flex-container">
+				<div class = "flex-child" id = "leftbox">
+					<br><br>
+					<img src = "images/ZoeBinghamHeadShot.jpeg" alt = "Zoe Bingham" class = "roundedImage" style="padding-right: 0px; vertical-align: middle;"> 
+				</div>
+				<div class = flex-child id = "rightbox">
+					<h3 class= "body-text" style="padding-left: 5px; padding-right: 0%;">Hi, I'm Zoe!</h3>
+					<h3 class= "body-text" style="padding-left: 5px; padding-right: 0%;">As a Third Year Software Engineering student and tutor at Rochester Institute of Technology, I am very passionate about learning and teaching new programming skills.</h3>
+					<h3 class= "body-text" style="padding-left: 5px; padding-right: 0%;">I am the project manager and founder for a mobile beverage customization application called MiXR. Keep up with our latest developments by checking out the <a onclick="document.getElementById('projects').scrollIntoView();">project</a> section!</h3> 
+				</div>
+			</div>
+		</div>
+		<hr class = "solid">
+		<br id = "tutoring"><br>
+		<div>
+			<h1 class = "subtitle">Need a tutor?</h1>
+			<h3 class = "body-text">I have experience tutoring college level students in introductory Java and Python programming courses. 
+			</h3>
+			<h3 class = "body-text">Students can expect to learn the typical conventions of one of these languages, build a foundation for critical thinking, and understand underlying concepts behind their code.</h3>
+			<h3 class = "body-text">Tutoring options include in-person and/or virtual sessions. Lessons range from elementary to college level in Java or Python.</h3>
+			<h3 class = "body-text">Contact me at <a href = "mailto: zmb6893@g.rit.edu">zmb6893@g.rit.edu</a> for more information</h3>
 		</div>
 		<br id = "projects" ><br>
 		<hr class = "solid">
@@ -83,12 +103,14 @@
 		<div>
 			<h1 class = "subtitle">Check Out My Resume</h1>
 			<iframe width="560" height="315" src="files/Bingham_Zoe_SWENresume.pdf"></iframe>
+			<br><br><br><br><br><br>
 		</div>
 		<br id = "social"><br>
 		<hr class = "solid">
 		<div>
 			<h1 class = "subtitle">Connect With Me</h1>
 			<h3 class = "body-text">LinkedIn: <a href="https://www.linkedin.com/in/zoe-bingham/" target="_blank">zoe-bingham</a></h3>
+			<br><br><br><br><br><br>
 		</div>
 		<br id = "contactMe"><br>
 		<hr class = "solid">
@@ -96,6 +118,7 @@
 			<h1 class = "subtitle">Reach Out to Me</h1>
 			<h3 class = "body-text">Email: <a href = "mailto: zmb6893@g.rit.edu">zmb6893@g.rit.edu</a></h3>
 			<h3 class = "body-text">Phone: <a href="tel:509-552-3167">509-552-3167</a></h3>
+			<br><br><br><br><br><br>
 		</div>
 
 	</body>
