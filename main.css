@@ -55,6 +55,7 @@ ul {
 li {
 	display: inline-block;
 	margin-right: 20px;
+	color: var(--color4);
 }
 
 li:hover {
@@ -88,4 +89,19 @@ a {
 	color: var(--color4);
 	border-radius: 5px;
 	margin:auto;
+}
+
+.section {
+	padding-top: 1rem;
+	padding-bottom: 5rem;
+}
+
+.contact {
+	color:#19303C;
+	font-size: 1.5rem;
+}
+
+h1 {
+	color: #A93F55;
+	font-size: 3rem;
 }
