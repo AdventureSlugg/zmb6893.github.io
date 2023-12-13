@@ -1,126 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-		<link rel="icon" type="image/x-icon" href="/images/favicon.png">
-		<link rel="stylesheet" href="portfolio-page.css">
-		<link href='https://fonts.googleapis.com/css?family=Spartan' rel='stylesheet'>
-		<meta name="description" content="Zoe Bingham's portfolio website">
- 		<meta name="keywords" content="Zoe Bingham, Zoe, Bingham, software engineer, RIT, computer science, co-op, software engineering, programmer, programming, code, MiXR, upgrowth, project manager, student, software engineering student, rit student, seeking co-op, seeking work, internship, intern, si leader, tutor, full stack, full stack developer, backend developer, database, java, c, python, reactnative, react, reactjs, swift, undergrad">
-	</head>
-	<body>
-		<header>
-			<div class="header-btn-group">
-				<button class = "header-btn" onclick="document.getElementById('aboutMe').scrollIntoView();">About me</button>
-				<button class = "header-btn" onclick="document.getElementById('tutoring').scrollIntoView();">Tutoring</button>
-				<button class = "header-btn" onclick="document.getElementById('projects').scrollIntoView();">Projects</button>
-				<button class = "header-btn" onclick="document.getElementById('resume').scrollIntoView();">Resume</button>
-				<button class = "header-btn" onclick="document.getElementById('social').scrollIntoView();">Social Media</button>
-				<button class = "header-btn" onclick="document.getElementById('contactMe').scrollIntoView();">Contact Info</button>
-			  </div>
-		</header>
-		<div id = "home" class = "jumbotron">
-			<br><br><br>
-			<h1 class = "title">Zoe Bingham</h1>
-			<h2>A Programmer's Portfolio</h2>
-			<br>
-			<br>
-		</div>
-		<br id = "aboutMe" ><br>
-		<div class =  "about-me">
-			<h1 class = "subtitle">About Me</h1>
-			<div class = "flex-container">
-				<div class = "flex-child" id = "leftbox">
-					<br><br>
-					<img src = "images/ZoeBinghamHeadShot.jpeg" alt = "Zoe Bingham" class = "roundedImage" style="padding-right: 0px; vertical-align: middle;"> 
-				</div>
-				<div class = flex-child id = "rightbox">
-					<h3 class= "body-text" style="padding-left: 5px; padding-right: 0%;">Hi, I'm Zoe!</h3>
-					<h3 class= "body-text" style="padding-left: 5px; padding-right: 0%;">As a Third Year Software Engineering student and tutor at Rochester Institute of Technology, I am very passionate about learning and teaching new programming skills.</h3>
-					<h3 class= "body-text" style="padding-left: 5px; padding-right: 0%;">I am the project manager and founder for a mobile beverage customization application called MiXR. Keep up with our latest developments by checking out the <a onclick="document.getElementById('projects').scrollIntoView();">project</a> section!</h3> 
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Zoe Bingham | Programming Portfolio</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<!-- Card for aesthetic -->
+	<div class="main-card">
+		<div class="content">
+			<div class="header"> 
+				<b>ZOE</b>
+				<div class="nav-bar">
+					<ul>
+						<li><a>Projects</a></li>
+						<li><a>About Me</a></li>
+						<li><a>Resume</a></li>
+						<li><a>Contact</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
-		<hr class = "solid">
-		<br id = "tutoring"><br>
-		<div>
-			<h1 class = "subtitle">Need a tutor?</h1>
-			<h3 class = "body-text">I have experience tutoring college level students in introductory Java and Python programming courses. 
-			</h3>
-			<h3 class = "body-text">Students can expect to learn the typical conventions of one of these languages, build a foundation for critical thinking, and understand underlying concepts behind their code.</h3>
-			<h3 class = "body-text">Tutoring options include in-person and/or virtual sessions. Lessons range from elementary to college level in Java or Python.</h3>
-			<h3 class = "body-text">Contact me at <a href = "mailto: zmb6893@g.rit.edu">zmb6893@g.rit.edu</a> for more information</h3>
-		</div>
-		<br id = "projects" ><br>
-		<hr class = "solid">
-		<div class = "developments">
-			<h1 class = "subtitle">Keep Up With My Latest Developments</h1>
-			<h3 class= "body-text">Checkout my github: <a href="https://github.com/zmb6893/" target="_blank">zmb6893</a></h3>			
-			<br>
-			<div class="container">
-				<h2 class = "significant">Previews:</h2>  
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				  <!-- Indicators -->
-				  <ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-				  </ol>
-			  
-				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner">
-					<div class="item active">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/zmDSU2rg9k4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+		
+		<div style="display: flex; height: 80%; width:100%; align-items: center;">
+			<div style="text-align: right">
+				<span style="color: #F2545B; font-size: 100px; font-family: Montserrat; font-weight: 700; word-wrap: break-word">Zoe <br/></span>
+				<span style="color: #A93F55; font-size: 100px; font-family: Montserrat; font-weight: 700; word-wrap: break-word">Bingham</span>
+			</div>
 
-					<div class="item">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/IZqBNv6yT5cc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-			  
-					<div class="item">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/zmDSU2rg9k4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				  	
-				  </div>
-			  
-				  <!-- Left and right controls -->
-				  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-					<span class="sr-only">Previous</span>
-				  </a>
-				  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-					<span class="sr-only">Next</span>
-				  </a>
-				</div>
-			  </div>
-			  <iframe src="https://survey-time-graph.herokuapp.com/embed" width="1140" height="500" style="border:none; background:white;" frameborder="0" scrolling="yes"></iframe>
-			<br>
-		</div>
-		<br id = "resume"><br>
-		<hr class = "solid">
-		<div>
-			<h1 class = "subtitle">Check Out My Resume</h1>
-			<iframe width="560" height="315" src="files/Bingham_Zoe_SWENresume.pdf"></iframe>
-			<br><br><br><br><br><br>
-		</div>
-		<br id = "social"><br>
-		<hr class = "solid">
-		<div>
-			<h1 class = "subtitle">Connect With Me</h1>
-			<h3 class = "body-text">LinkedIn: <a href="https://www.linkedin.com/in/zoe-bingham/" target="_blank">zoe-bingham</a></h3>
-			<br><br><br><br><br><br>
-		</div>
-		<br id = "contactMe"><br>
-		<hr class = "solid">
-		<div>
-			<h1 class = "subtitle">Reach Out to Me</h1>
-			<h3 class = "body-text">Email: <a href = "mailto: zmb6893@g.rit.edu">zmb6893@g.rit.edu</a></h3>
-			<h3 class = "body-text">Phone: <a href="tel:509-552-3167">509-552-3167</a></h3>
-			<br><br><br><br><br><br>
-		</div>
+			<div style="display: block; width:100%;">
+				<a class="download-button" href="files/Zoe_Bingham_Software_Engineering_Resume.pdf" download="Bingham_Zoe_Software_Engineer_Resume.pdf" target="_blank">Download Resume</a>
+			</div>
 
-	</body>
+		</div>
+		
+	</div>
+</body>
 </html>
