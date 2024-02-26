@@ -1,82 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<title>Zoe Bingham | Programming Portfolio</title>
-	<link rel="stylesheet" href="main.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zoe's Corner</title>
+
+	<style>
+		@font-face {
+			font-family: 'Montserrat';
+			src: url('/assets/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			background-image: url('/assets/images/Background.png');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.card {
+			display: flex;
+			flex-direction: column;
+			background-color: aliceblue;
+			width: 40rem;
+			margin: auto;
+			border-radius: 12px;
+		}
+
+		.socials {
+			display: flex;
+			flex-direction: row;
+		}
+
+		a {
+			padding: 15px;
+		}
+
+		.content {
+			margin: 2rem;
+		}
+
+		.fun-image {
+			border-radius: 12px;
+		}
+
+		.centered {
+			margin: auto;
+  			width: fit-content;
+		}
+	</style>
 </head>
 <body>
-	<!-- Card for aesthetic -->
-	<div class="main-card">
+
+	<div class="card">
 		<div class="content">
-			<div class="header"> 
-				<b>ZOE</b>
-				<div class="nav-bar">
-					<ul>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#about-me">About Me</a></li>
-						<li><a href="#resume">Resume</a></li>
-						<li><a href="#contact-me">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		
-		<div style="overflow-y: auto; height: 80%; width:98%; margin:1%;">
-			<!-- Landing Page Section -->
-			<div class="section" style="display: flex; align-items: center; padding-top: 5rem;">
-				<div style="text-align: right">
-					<span style="color: #F2545B; font-size: 100px; font-family: Montserrat; font-weight: 700; word-wrap: break-word">Zoe <br/></span>
-					<span style="color: #A93F55; font-size: 100px; font-family: Montserrat; font-weight: 700; word-wrap: break-word">Bingham</span>
-				</div>
+			<h1> Zoe's Corner is currently under reconstruction... </h1>
+			<p> 
+				Thanks for stopping by! I am currently reworking my website, but in the meantime, you can checkout my resume or socials!
+			</p>
+
+			<div class="centered">
+				<img class="fun-image" src="/assets/images/searching-for-my-website.gif" height="60%">
 	
-				<div style="display: block; width:100%;">
-					<a class="download-button" href="files/Zoe_Bingham_Software_Engineering_Resume.pdf" download="Bingham_Zoe_Software_Engineer_Resume.pdf" target="_blank">Download Resume</a>
-				</div>
-	
-			</div>
-
-			<!-- Projects Section -->
-			<div class="section" id="projects">
-				<h1>Projects</h1>
-				<p>You can view my hackathon projects in devpost!</p> <a href="https://devpost.com/zmb6893" target="_blank">zmb6893</a>
-				<p>You can find some of my other developments in my github:</p> <a href="https://github.com/zmb6893" target="_blank">zmb6893</a>
-			</div>
-
-			<!-- About Me Section-->
-			<div class="section" id="about-me">
-				<h1>About Me</h1>
-				<p>I am an adventurer. There is nothing I love more than a good adventure--each journey, an oppurtunity to immerse myself in fresh perspectives and uncover the beauty in the mundane</p>
-			</div>
-
-			<!-- Resume Section-->
-			<div class="section" id="resume">
-				<h1>Resume</h1>
-				<div style="display: block; width:100%;">
-					<a class="download-button" href="files/Zoe_Bingham_Software_Engineering_Resume.pdf" download="Bingham_Zoe_Software_Engineer_Resume.pdf" target="_blank">Download Resume</a>
+				<div class="socials centered">
+					<a href="/files/Zoe_Bingham.pdf" download>
+						<img height="32px" width="32px" src="/assets/images/icons/resume.png" alt="Zoe's Resume">
+					</a>
+					<a href="https://www.linkedin.com/in/zoe-bingham/">
+						<img height="32px" width="32px" src="/assets/images/icons/linkedin.png" alt="Zoe's Linkedin">
+					</a>
+					<a href="mailto:zmb6893@g.rit.edu">
+						<img height="32px" width="32px" src="/assets/images/icons/email.png" alt="Zoe's Email">
+					</a>
 				</div>
 			</div>
-
-			<!-- Contact Section-->
-			<div class="section" id="contact-me">
-				<h1>Contact</h1>
-				
-				<div style="margin-left:20rem">
-					<div style="display: flex; align-items: center;">
-						<img src="assets/email.png">
-						<a href="mailto:zmb6893@g.rit.edu" class="contact" target="_blank">zmb6893@g.rit.edu</a>
-					</div>
-					<br>
-					<div style="display: flex; align-items: center;">
-						<img src="assets/linkedin.png">
-						<a href="https://www.linkedin.com/in/zoe-bingham/" class="contact" target="_blank">zoe-bingham</a>
-					</div>
-				</div>
-				
-			</div>
+			
 		</div>
-		
-		
 	</div>
+	
 </body>
 </html>
