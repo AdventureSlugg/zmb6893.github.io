@@ -12,6 +12,7 @@
 			font-weight: normal;
 			font-style: normal;
 		}
+
 		body {
 			display: flex;
 			justify-content: center;
@@ -54,7 +55,28 @@
 
 		.centered {
 			margin: auto;
-  			width: fit-content;
+			width: fit-content;
+		}
+
+		/* Media Query for Mobile View */
+		@media only screen and (max-width: 600px) {
+			body {
+				background-attachment: scroll;
+			}
+
+			.card {
+				width: 90%; /* Adjust the width for smaller screens */
+			}
+
+			.content {
+				margin: 1rem; /* Adjust margin for smaller screens */
+			}
+
+			.fun-image {
+				border-radius: 12px;
+				height: 60%;
+				width: 100%;
+			}
 		}
 	</style>
 </head>
@@ -68,7 +90,7 @@
 			</p>
 
 			<div class="centered">
-				<img class="fun-image" src="/assets/images/searching-for-my-website.gif" height="60%">
+				<img class="fun-image" src="/assets/images/searching-for-my-website.gif">
 	
 				<div class="socials centered">
 					<a href="/files/Zoe_Bingham.pdf" download>
