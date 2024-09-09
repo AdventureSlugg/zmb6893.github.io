@@ -25,6 +25,8 @@ body {
 	backface-visibility: visible;
 	left: calc(var(--medium-book-width) * -.5);
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	transform: translateX(0);
+	transition: transform 1.75s ease-in-out, box-shadow .35s ease-in-out;
 }
 
 .front, .back, .page1, .page2, .page3, .page4, .page5, .page6 {
