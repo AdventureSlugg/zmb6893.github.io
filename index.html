@@ -3,110 +3,83 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Zoe's Corner</title>
-
-	<style>
-		@font-face {
-			font-family: 'Montserrat';
-			src: url('/assets/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
-			font-weight: normal;
-			font-style: normal;
-		}
-
-		body {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 100vh;
-			margin: 0;
-			background-image: url('/assets/images/Background.png');
-			background-size: cover;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			font-family: 'Montserrat', sans-serif;
-		}
-
-		.card {
-			display: flex;
-			flex-direction: column;
-			background-color: aliceblue;
-			width: 40rem;
-			margin: auto;
-			border-radius: 12px;
-		}
-
-		.socials {
-			display: flex;
-			flex-direction: row;
-		}
-
-		a {
-			padding: 15px;
-		}
-
-		.content {
-			margin: 2rem;
-		}
-
-		.fun-image {
-			border-radius: 12px;
-		}
-
-		.centered {
-			margin: auto;
-			width: fit-content;
-		}
-
-		/* Media Query for Mobile View */
-		@media only screen and (max-width: 600px) {
-			body {
-				background-attachment: scroll;
-			}
-
-			.card {
-				width: 90%; /* Adjust the width for smaller screens */
-			}
-
-			.content {
-				margin: 1rem; /* Adjust margin for smaller screens */
-			}
-
-			.fun-image {
-				border-radius: 12px;
-				height: 60%;
-				width: 100%;
-			}
-		}
-	</style>
+	<title>Catalog of Expeditions: Zoe Bingham</title>
+	<link rel="stylesheet" href="/assets/styles/book-styles.css">
+	<link rel="stylesheet" href="/assets/styles/card.css">
+	<link rel="stylesheet" href="/assets/styles/content.css">
+	<link rel="stylesheet" href="/assets/styles/accessories.css">
 </head>
 <body>
-
-	<div class="card">
-		<div class="content">
-			<h1> Zoe's Corner is currently under reconstruction... </h1>
-			<p> 
-				Thanks for stopping by! I am currently reworking my website, but in the meantime, you can checkout my resume or socials!
-			</p>
-
-			<div class="centered">
-				<img class="fun-image" src="/assets/images/searching-for-my-website.gif">
-	
-				<div class="socials centered">
-					<a href="/files/Zoe_Bingham.pdf" download>
-						<img height="32px" width="32px" src="/assets/images/icons/resume.png" alt="Zoe's Resume">
-					</a>
-					<a href="https://www.linkedin.com/in/zoe-bingham/">
-						<img height="32px" width="32px" src="/assets/images/icons/linkedin.png" alt="Zoe's Linkedin">
-					</a>
-					<a href="mailto:zmb6893@g.rit.edu">
-						<img height="32px" width="32px" src="/assets/images/icons/email.png" alt="Zoe's Email">
-					</a>
-				</div>
-			</div>
+	<audio id="background-music" autoplay loop>
+		<source src="/assets/audio/perfect-beauty.mp3" type="audio/mp3">
+		Your browser does not support the audio element.
+	</audio>
+	<script>
+		var music = document.getElementById('background-music');
+		music.volume = 0.05;
+	</script>
+	<div class="book">
+		<div class="back"></div>
+		<div class="page6">
+			<button 
+				class="nav-button"
+				style="position: absolute; right:2rem"
+				onclick="prevPage()"
+				id="next-button"
+				> 
+					>> 
+			</button>
+			<div  id="right-page"></div>
 			
 		</div>
+		<div class="page5">
+			<button 
+				style="position: absolute; right: 2rem; transform: scaleX(-1);"
+				onclick="nextPage()"
+				class="nav-button"
+				id="back-button"
+				> 
+				<< 
+			</button>
+			<div class="left-page" id="left-page"></div>
+		</div>
+		<div class="page4"></div>
+		<div class="page3"></div>
+		<div class="page2"></div>
+		<div class="page1"></div>
+		<div class="front">
+			<h1>
+				Catalog of Expeditions
+			</h1>
+			<div class="banner">
+				<h2> The Technical Portfolio of Zoe Bingham </h2>
+				<svg width="4rem" height="4rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+					  <linearGradient id="gold-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%" gradientTransform="rotate(-45)">
+						<stop offset="0%" style="stop-color: #FF9E00; stop-opacity: 1" />
+						<stop offset="28%" style="stop-color: #FFE600; stop-opacity: 1" />
+						<stop offset="37%" style="stop-color: #FFDE00; stop-opacity: 1" />
+						<stop offset="57%" style="stop-color: #FFAB00; stop-opacity: 1" />
+						<stop offset="100%" style="stop-color: #FF5C00; stop-opacity: 1" />
+					  </linearGradient>
+					  <linearGradient id="highlight-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+						<stop offset="0%" stop-color="white" stop-opacity="0" />
+						<stop offset="50%" stop-color="white" stop-opacity="0.4" />
+						<stop offset="100%" stop-color="white" stop-opacity="0" />
+					  </linearGradient>
+					</defs>
+					<circle cx="20" cy="20" r="20" fill="url(#gold-gradient)" />
+					<rect x="-40" y="-40" width="80" height="80" fill="url(#highlight-gradient)" />
+				</svg>
+			</div>
+		</div>
 	</div>
-	
+
+	<div class="modal" id="modal-container">
+		<button onclick="closeModal()" class="close-button"> x </button>
+		<div id="modal"></div>
+	</div>
+	<script src="/src/NavigationControls.js"></script>
+
 </body>
 </html>

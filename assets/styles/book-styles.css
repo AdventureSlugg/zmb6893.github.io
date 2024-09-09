@@ -1,0 +1,171 @@
+:root {
+	--medium-book-width: 22rem;
+	--medium-book-height: 30rem;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	perspective: 1200px;
+	background-color: black;
+	background-image: url('/assets/images/DeskTexture.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.book {
+	transform-style: preserve-3d;
+	position: relative;
+	height: var(--medium-book-height);
+	cursor: pointer;
+	backface-visibility: visible;
+	left: calc(var(--medium-book-width) * -.5);
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.front, .back, .page1, .page2, .page3, .page4, .page5, .page6 {
+	transform-style: preserve-3d;
+	position: absolute;
+	width: var(--medium-book-width);
+	height: 100%;
+	top: 0; left: 0;
+	transform-origin: left center;
+	transition: transform 1.75s ease-in-out, box-shadow .35s ease-in-out;
+}
+
+.front, .back {
+	background: rgb(255,0,16);
+	background: linear-gradient(225deg, #FF00B8 21%, #3F3BF4 61%, #FF7A00 95%); 
+	box-shadow:  0px 4px 4px 12px rgba(0, 0, 0, .1);
+
+}
+
+.front, .page1, .page3, .page5 {
+	border-bottom-right-radius: 2em;
+	border-top-right-radius: 2em;
+}
+
+.back, .page2, .page4, .page6 {
+	border-bottom-right-radius: 2em;
+	border-top-right-radius: 2em;
+}
+
+.page1, .page2 { 
+	background: #efefef;
+}
+
+.page3, .page4 {
+	background: #f5f5f5;
+}
+
+.page5, .page6 {
+	background: #fdfdfd;
+}
+
+.page5 {
+	unicode-bidi: normal;
+}
+
+.book:hover {
+	transform: translateX(calc(var(--medium-book-width) * .5));
+	transition: transform 1.5s ease-in-out;
+}
+
+.book:hover .front {
+	transform: rotateY(-160deg) scale(1.1);
+	box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page1 {
+	transform: rotateY(-150deg) scale(1.1);
+	box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page2 {
+	transform: rotateY(-30deg) scale(1.1);
+	box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page3 {
+	transform: rotateY(-140deg) scale(1.1);
+	box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page4 {
+	transform: rotateY(-40deg) scale(1.1);
+	box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page5 {
+	transform: rotateY(-130deg) scale(1.1);
+	box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page6 {
+	transform: rotateY(-50deg) scale(1.1);
+	box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .back {
+	transform: rotateY(-20deg) scale(1.1);
+}
+
+.front h1 {
+	color: white;
+	margin: 5rem;
+	font-size: 40px;
+	font-weight: 500;
+}
+
+.banner {
+	width: 100%;
+	height: 6rem;
+	box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, .25);
+	background-color: #FCFAFA;
+	margin-top: 8rem;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	font-size: 12px;
+}
+
+.banner h2, .banner svg {
+	padding: 1rem;
+	color: rgb(59, 59, 59);
+}
+
+@keyframes shine {
+	0% { transform: translateX(-100%) translateY(-100%); }
+	100% { transform: translateX(100%) translateY(100%); }
+}
+
+rect {
+	animation: shine 2s infinite;
+}
+
+.page6.flip {
+	transform: rotateY(-160deg);
+	transition: transform 3s;
+}
+
+.nav-button {
+	background-color: #3F3BF4;
+	border-radius: 10rem;
+	color: white;
+	border-color: rgb(0, 238, 255);
+	top: .25rem;
+}
+
+.nav-button:hover {
+	background-color: #3bc9f4;
+	border-color:rgb(0, 255, 64)
+}
+
+.disabled, .disabled:hover {
+	background-color: rgb(174, 173, 173);
+	border-color: grey;
+}

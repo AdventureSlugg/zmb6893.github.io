@@ -1,0 +1,89 @@
+.top-section {
+	height: 15rem;
+}
+
+.bottom-section {
+	display: flex;
+	height: 9rem;
+}
+
+.hobbies {
+	width: 60%;
+}
+
+.image {
+	width: 40%;
+}
+
+.image {
+    background-image: url('/assets/images/CoolImage.jpeg');
+	background-size: cover;
+}
+
+.selfie {
+	width: 40%;
+	background-image: url('/assets/images/Selfie.jpeg');
+	background-size: cover;
+	height: 10rem;
+	margin: 0rem;
+}
+
+.about-section {
+	margin: 1rem 1rem;
+	height: 100%;
+	display: flex;
+}
+
+.card-content {
+	width: 10rem;
+	font-size: 9px;
+	color: gray;
+	font-weight: 100;
+	padding-right: .5rem;
+}
+
+.left-page {
+	transform: scaleX(-1);
+}
+
+#modal-container {
+	position: absolute;
+	background: #fff;
+	box-shadow: 0 .5em .5em 0 rgba(0, 0, 0, .2);
+	border-radius: 1rem;
+	margin: 2rem 1rem;
+	height: 2rem;
+	width: 3rem;
+	display: none;
+	background-color: #fff;
+	border-style: double;
+  	border-color: lightgreen;
+}
+
+#modal .card-content {
+	font-size: 12px;
+	width: 20rem;
+	margin:auto;
+}
+
+#modal .selfie {
+	height: 15rem;
+}
+
+#modal {
+	margin:auto;
+	padding: 1rem;
+	width: 30rem;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.guide-images {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.guide-images img {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
