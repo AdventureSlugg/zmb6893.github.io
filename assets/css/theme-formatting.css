@@ -1,6 +1,14 @@
 .theme-mode-button {
 	bottom: 1rem;
-	position: absolute;
-	right: 0;
+	position: fixed;
+	right: 0rem;
 	width: 9rem;
+}
+
+.jumbotron {
+	background-image: url('/assets/trees.jpg');
+	opacity: 1;
+	height: 40rem;
+	background-repeat: no-repeat;
+	background-size: cover;
 }

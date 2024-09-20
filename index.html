@@ -8,52 +8,51 @@
 	<link rel="stylesheet" href="/assets/css/theme-formatting.css">
 	<script src="/assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 	<script src="/src/navbar.js" defer></script>
+	<script src="/src/theme.js" defer></script>
 </head>
 <body class="bg-dark" data-bs-theme="dark">
 	<nav-bar></nav-bar>
+
+	<div class="jumbotron">
+		<div class="container">
+			<h1 class="giant-text"> Zoe Bingham</h1>
+		</div>
+	</div>
 	
 	<div class="container">
-		<div class="form-switch theme-mode-button">
-			<input class="form-check-input" type="checkbox" role="switch" id="themeSwitch" onchange="themeChange(event)" value="true">
-			<label class="form-check-label" for="darkMode" id="themeLabel">Dark Mode</label>
+		<div class="row">
+			<div id="about" class="gy-5">
+				<h3>
+					Meet the Developer
+				</h3>
+			</div>
+			<div id="projects" class="gy-5">
+				<h3>
+					Checkout my Projects
+				</h3>
+			</div>
+			<div id="experience" class="gy-5">
+				<h3>
+					View My Experience
+				</h3>
+			</div>
+			<div id="awards" class="gy-5">
+				<h3>
+					Explore My Achievements
+				</h3>
+			</div>
+			<div id="awards" class="gy-5">
+				<h3>
+					Give Me a Call
+				</h3>
+			</div>
 		</div>
 	</div>
 
-	<script>
-		const themeModes = {
-			0: {
-				theme: 'light',
-				label: 'Light Mode',
-				style: 'bg-light'
-			},
-			1: {
-				theme: 'dark',
-				label: 'Dark Mode',
-				style: 'bg-dark'
-			}
-		}
-
-		const themeChange = (event) => {
-			// When the theme changes
-			// 1. Change the value of the switch
-			document.getElementById('themeSwitch')['value'] = event.target.checked;
-
-			// 2. Change the label text of the toggle button
-			const themeKey = Number(event.target.checked);
-			const themeMode = themeModes[themeKey];
-			document.getElementById('themeLabel').textContent = themeMode.label;
-
-			// 3. Change the bootstrap theme to the selected theme
-			const oppositeKey = Number(!themeKey)
-			let elements = document.getElementsByClassName(themeModes[oppositeKey].style);
-			elements = Array.from(elements)
-			console.log(elements)
-
-			elements.forEach(element => {
-				element.setAttribute('data-bs-theme', themeMode.theme);
-				element.classList = themeMode.style;
-			})
-		}
-	</script>
+	<div class="form-switch theme-mode-button">
+		<input class="form-check-input" type="checkbox" role="switch" id="themeSwitch" onchange="themeChange(event)" aria-checked="true">
+		<label class="form-check-label" for="darkMode" id="themeLabel">Dark Mode</label>
+		<span id="themeSymbol"></span>
+	</div>
 </body>
 </html>

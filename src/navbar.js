@@ -39,7 +39,7 @@ class NavBar extends HTMLElement {
 		const navLinkElements = this.createNavLinks();
 		navbar.innerHTML = `
 		  	<div class="container-fluid">
-				<a class="navbar-brand">
+				<a class="navbar-brand" href="">
 					<img>
 					ZOE
 				</a>
