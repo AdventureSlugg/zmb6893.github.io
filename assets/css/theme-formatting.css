@@ -16,6 +16,10 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	-webkit-background-attachment: fixed; /* For Safari and Chrome */
+    -moz-background-attachment: fixed;    /* For Firefox */
+    -o-background-attachment: fixed;      /* For Opera */
+    -ms-background-attachment: fixed;     /* For Internet Explorer */
 }
 
 .section {
@@ -24,6 +28,10 @@
 	background-size: cover;
 	background-attachment: fixed;
 	padding: 4rem;
+	-webkit-background-attachment: fixed; /* For Safari and Chrome */
+    -moz-background-attachment: fixed;    /* For Firefox */
+    -o-background-attachment: fixed;      /* For Opera */
+    -ms-background-attachment: fixed;     /* For Internet Explorer */
 }
 
 .profile-pic {
@@ -79,6 +87,10 @@ nav-bar {
 }
 
 @media screen and (max-width: 768px) {
+	.jumbotron {
+        background-attachment: scroll;
+        background-position: center center;
+    }
     .section {
         background-attachment: scroll;
         background-position: center center;
