@@ -28,3 +28,9 @@
 .vertical-center {
 	align-content: center
 }
+
+.in-place {
+	position: fixed;
+	top:0rem;
+	width: 100%;
+}
