@@ -36,4 +36,7 @@ const themeChange = (event) => {
 
 	// 4. Change the symbol
 	document.getElementById('themeSymbol').innerHTML = themeMode.symbol;
+
+	const navbar = document.getElementsByTagName('nav-bar')[0]
+	navbar.changeTheme(themeMode.theme)
 }

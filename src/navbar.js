@@ -1,6 +1,10 @@
 class NavBar extends HTMLElement {
 	constructor(){
 		super()
+
+		if (!this.shadowRoot) {
+            this.attachShadow({ mode: 'open' });
+        }
 	}
 
 	navLinks = [
@@ -25,20 +29,34 @@ class NavBar extends HTMLElement {
 			link: '#contact'
 		},
 	]
+
+	// By default, the theme will be dark
+	theme = 'dark';
 	
 	connectedCallback () {
-		const shadow = this.attachShadow({mode: "open"})
+		if (!this.shadowRoot) {
+            this.attachShadow({ mode: 'open' });
+        } else {
+			this.shadowRoot.innerHTML = '';
+		}
 
-		const linkElem = document.createElement('link');
-		linkElem.setAttribute('rel', 'stylesheet');
-		linkElem.setAttribute('href', '/assets/bootstrap-5.3.3-dist/css/bootstrap.min.css');
+		// Import bootstrap css
+		const bsCss = document.createElement('link');
+		bsCss.setAttribute('rel', 'stylesheet');
+		bsCss.setAttribute('href', '/assets/bootstrap-5.3.3-dist/css/bootstrap.min.css');
+		// import custom css
+		const themeCss = document.createElement('link');
+		themeCss.setAttribute('rel', 'stylesheet');
+		themeCss.setAttribute('href', '/assets/css/theme-formatting.css');
+
 
 		const navbar = document.createElement("nav");
-		navbar.classList = 'navbar bg-dark px-4'
-		navbar.setAttribute('data-bs-theme', 'dark');
+		navbar.id = 'navbar'
+		navbar.classList = `navbar bg-${this.theme} px-4`
+		navbar.setAttribute('data-bs-theme', this.theme);
 		const navLinkElements = this.createNavLinks();
 		navbar.innerHTML = `
-		  	<div class="container-fluid">
+			<div class="container-fluid">
 				<a class="navbar-brand" href="">
 					<img>
 					ZOE
@@ -50,8 +68,10 @@ class NavBar extends HTMLElement {
 				</ul>
 			</div>
 		`
-		shadow.appendChild(linkElem);
-		shadow.appendChild(navbar);
+		
+		this.shadowRoot.appendChild(bsCss);
+		this.shadowRoot.appendChild(themeCss);
+		this.shadowRoot.appendChild(navbar);
 	}
 
 	createNavLinks() {
@@ -67,6 +87,10 @@ class NavBar extends HTMLElement {
 		return navLinkElements
 	}
 	
+	changeTheme(theme) {
+		this.theme = theme;
+		this.connectedCallback();
+	}
 }
 
 window.customElements.define('nav-bar', NavBar)
