@@ -73,3 +73,7 @@ nav-bar {
 .card-img-top {
 	height: 15rem !important;
 }
+
+.bg-light .section {
+	color: white;
+}
