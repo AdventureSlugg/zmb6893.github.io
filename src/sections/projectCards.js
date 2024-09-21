@@ -6,27 +6,27 @@ class ProjectCards extends HTMLElement {
 	projects = [
 		{
 			title: '3DSea',
-			description: 'A vast library of 3D web components, created using THREE,js',
+			description: 'A vast library of 3D web components, created using THREE.js',
 			link: 'https://github.com/zmb6893',
 			linkTitle: 'Source Code',
-			image: '/assets/images/background/oak-flower.jpg',
-			alt: '3DSea Component Library Logo'
+			image: '/assets/images/project/ThreeDSea.png',
+			alt: '3DSea Thumbnail'
 		},
 		{
 			title: 'ApolloLink',
-			description: 'A web application that prempetively detects signs of disease from the users smart watch',
+			description: 'A web application that prempetively detects signs of disease from the user\'s smart watch',
 			link: 'https://github.com/zmb6893',
 			linkTitle: 'Source Code',
-			image: '/assets/images/background/oak-flower.jpg',
-			alt: '3DSea Component Library Logo'
+			image: '/assets/images/project/ApolloLink.jpg',
+			alt: 'Apollo Link Thumbnail'
 		},
 		{
 			title: 'BrickVibes',
-			description: 'Detects emotional state based on music trends of a user',
+			description: 'Detects the emotional state based on music trends of the user',
 			link: 'https://github.com/zmb6893',
 			linkTitle: 'Source Code',
-			image: '/assets/images/background/oak-flower.jpg',
-			alt: '3DSea Component Library Logo'
+			image: '/assets/images/project/BrickVibes.jpg',
+			alt: 'BrickVibes Thumbnail'
 		},
 	]
 
