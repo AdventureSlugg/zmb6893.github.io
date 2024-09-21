@@ -12,7 +12,7 @@
 .jumbotron {
 	background-image: url('/assets/purple\ clouds.png');
 	opacity: 1;
-	height: 50rem;
+	height: 90vh;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -42,4 +42,12 @@
 
 .tagline-text {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+	color: white;
+	height: 5rem;
+}
+
+.tagline-text:hover {
+	font-size: 4rem;
+	color:rgb(251, 255, 190);
+	font-weight:900;
 }
