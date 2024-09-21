@@ -7,11 +7,12 @@
 	<link rel="stylesheet" href="/assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/assets/css/theme-formatting.css">
 	<script src="/assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-	<script src="/src/components/navbar.js" defer></script>
 	<script src="/src/theme.js" defer></script>
+	<script src="/src/components/navbar.js" defer></script>
 	<script src="/src/components/card.js" defer></script>
+	<script src="/src/sections/projectCards.js" defer></script>
 </head>
-<body class="bg-dark" data-bs-theme="dark">
+<body class="bg-dark container-fluid" data-bs-theme="dark">
 	<nav-bar class="in-place"></nav-bar>
 
 	<div class="jumbotron vertical-center">
@@ -66,37 +67,8 @@
 					Take a peek at some of my projects! Be sure to checkout my github if you are interested in seeing how the
 					magic happens!
 				</p>
-				<div class="row gx-5 gy-5">
-					<div class="col">
-						<custom-card 
-							title="Some title" 
-							description="Some description" 
-							image="/assets/images/background/flowers.jpg"
-							linkTitle="Source Code"
-							link="https://github.com/zmb6893"
-						></custom-card>
-					</div>
-					
-					<div class="col">
-						<custom-card 
-							title="Some title" 
-							description="Some description" 
-							image="/assets/images/background/flowers.jpg"
-							linkTitle="Source Code"
-							link="https://github.com/zmb6893"
-						></custom-card>
-					</div>
-
-					<div class="col">
-						<custom-card 
-							title="Some title" 
-							description="Some description" 
-							image="/assets/images/background/flowers.jpg"
-							linkTitle="Source Code"
-							link="https://github.com/zmb6893"
-						></custom-card>
-					</div>
-				</div>
+				
+				<project-card-section></project-card-section>
 				
 			</div>
 		</div>
