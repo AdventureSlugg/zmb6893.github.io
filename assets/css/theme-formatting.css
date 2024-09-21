@@ -6,11 +6,12 @@
 }
 
 .jumbotron {
-	background-image: url('/assets/trees.jpg');
+	background-image: url('/assets/purple\ clouds.png');
 	opacity: 1;
-	height: 40rem;
+	height: 50rem;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 .profile-pic {
