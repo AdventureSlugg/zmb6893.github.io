@@ -62,7 +62,7 @@ class ProjectCards extends HTMLElement {
 		this.projects.forEach ((project, index) => {
 			projectCards += ((index + 1) % 4) === 0 ? `</div><div class='row gx-5 gy-5' style='padding-top: 2rem'>` : ''
 			projectCards += `
-				<div class='col-4'>
+				<div class='col-md-4 col-sm-12'>
 					<custom-card 
 						title="${project.title}" 
 						description="${project.description}" 
