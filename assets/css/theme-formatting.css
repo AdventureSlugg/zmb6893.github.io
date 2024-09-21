@@ -1,0 +1,79 @@
+.theme-mode-button {
+	bottom: 1rem;
+	position: fixed;
+	right: 0rem;
+	width: 9rem;
+}
+
+.bg-light {
+	background-color: #f5f1ed !important;
+}
+
+.jumbotron {
+	background-image: url('/assets/images/background/purple\ clouds.png');
+	opacity: 1;
+	height: 90vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.section {
+	opacity: 1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 4rem;
+}
+
+.profile-pic {
+	border-radius: 100%;
+	height: 15rem;
+	width: 15rem;
+	margin: auto;
+}
+
+.center {
+	display: flex;
+	flex-direction: row;
+}
+
+.vertical-center {
+	align-content: center
+}
+
+.in-place {
+	position: fixed;
+	top:0rem;
+	width: 100%;
+}
+
+.tagline-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+	color: white;
+	height: 5rem;
+}
+
+.tagline-text:hover {
+	font-size: 4rem;
+	color:rgb(251, 255, 190);
+	font-weight:900;
+}
+
+.section-title {
+	padding-bottom: 1rem;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+	color: white;
+}
+
+nav-bar {
+	z-index: 10;
+}
+
+.card-img-top {
+	height: 15rem !important;
+}
+
+.bg-light .section {
+	color: white;
+}

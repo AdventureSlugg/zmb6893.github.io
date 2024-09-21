@@ -3,83 +3,130 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Catalog of Expeditions: Zoe Bingham</title>
-	<link rel="stylesheet" href="/assets/styles/book-styles.css">
-	<link rel="stylesheet" href="/assets/styles/card.css">
-	<link rel="stylesheet" href="/assets/styles/content.css">
-	<link rel="stylesheet" href="/assets/styles/accessories.css">
+	<title>Document</title>
+	<link rel="stylesheet" href="/assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/css/theme-formatting.css">
+	<script src="/assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+	<script src="/src/theme.js" defer></script>
+	<script src="/src/components/navbar.js" defer></script>
+	<script src="/src/components/card.js" defer></script>
+	<script src="/src/sections/projectCards.js" defer></script>
 </head>
-<body>
-	<audio id="background-music" autoplay loop>
-		<source src="/assets/audio/perfect-beauty.mp3" type="audio/mp3">
-		Your browser does not support the audio element.
-	</audio>
-	<script>
-		var music = document.getElementById('background-music');
-		music.volume = 0.05;
-	</script>
-	<div class="book">
-		<div class="back"></div>
-		<div class="page6">
-			<button 
-				class="nav-button"
-				style="position: absolute; right:2rem"
-				onclick="prevPage()"
-				id="next-button"
-				> 
-					>> 
-			</button>
-			<div  id="right-page"></div>
-			
+<body class="bg-dark container-fluid" data-bs-theme="dark">
+	<nav-bar class="in-place"></nav-bar>
+
+	<div class="jumbotron vertical-center">
+		<div class="container">
+			<div class="row">
+				<h1 class="text-start gy-5 tagline-text">
+					Programming.
+				</h1>
+				<h1 class="text-center gy-5 tagline-text">
+					It's a medium of art.
+				</h1>
+				<h1 class="text-end gy-5 tagline-text">
+					I am the artist.
+				</h1>
+			</div>
 		</div>
-		<div class="page5">
-			<button 
-				style="position: absolute; right: 2rem; transform: scaleX(-1);"
-				onclick="nextPage()"
-				class="nav-button"
-				id="back-button"
-				> 
-				<< 
-			</button>
-			<div class="left-page" id="left-page"></div>
-		</div>
-		<div class="page4"></div>
-		<div class="page3"></div>
-		<div class="page2"></div>
-		<div class="page1"></div>
-		<div class="front">
-			<h1>
-				Catalog of Expeditions
-			</h1>
-			<div class="banner">
-				<h2> The Technical Portfolio of Zoe Bingham </h2>
-				<svg width="4rem" height="4rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-					<defs>
-					  <linearGradient id="gold-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%" gradientTransform="rotate(-45)">
-						<stop offset="0%" style="stop-color: #FF9E00; stop-opacity: 1" />
-						<stop offset="28%" style="stop-color: #FFE600; stop-opacity: 1" />
-						<stop offset="37%" style="stop-color: #FFDE00; stop-opacity: 1" />
-						<stop offset="57%" style="stop-color: #FFAB00; stop-opacity: 1" />
-						<stop offset="100%" style="stop-color: #FF5C00; stop-opacity: 1" />
-					  </linearGradient>
-					  <linearGradient id="highlight-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-						<stop offset="0%" stop-color="white" stop-opacity="0" />
-						<stop offset="50%" stop-color="white" stop-opacity="0.4" />
-						<stop offset="100%" stop-color="white" stop-opacity="0" />
-					  </linearGradient>
-					</defs>
-					<circle cx="20" cy="20" r="20" fill="url(#gold-gradient)" />
-					<rect x="-40" y="-40" width="80" height="80" fill="url(#highlight-gradient)" />
-				</svg>
+	</div>
+	
+	<div class="container" id="about" style="height: 35vh;"></div>
+
+	<div class="section vertical-center" style="background-image: url('/assets/images/background/flowers.jpg');">
+		<div class="container">
+			<div class="gy-5">
+				<h1 class="section-title">
+					Meet the Developer
+				</h1>
+				<div class="row">
+					<div class="col-sm-12 col-md-4 center">
+						<img src="/assets/images/me.jpeg" class="img-fluid profile-pic" alt="Zoe's Profile Pic">
+					</div>
+					<div class="col-sm-12 col-md-8 gy-4 vertical-center">
+						Hey there! About me sections are hard... Truly difficult! Some people know me as a peer or a mentor while others might know me as an avid adventurer.
+						No matter what I say here, it will never be enough to capture who I really am.
+						That said, if there's one thing I'd like to impart to anyone I might meet in the future, it would be this:
+						I believe in living life genuinely and authentically, with every grain—every morsel—of our beings.
+						This is as close to the real me as you'll get during your stay on my site! But don't worry, you'll now get to know the professional Zoe too!
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="modal" id="modal-container">
-		<button onclick="closeModal()" class="close-button"> x </button>
-		<div id="modal"></div>
-	</div>
-	<script src="/src/NavigationControls.js"></script>
+	<div class="container" id="projects" style="height: 35vh;"></div>
 
+	<div class="section vertical-center" style="background-image: url('/assets/images/background/chrysanthemum.jpg')">
+		<div class="container">
+			<div class="gy-5">
+				<h1 class="section-title">
+					Checkout My Projects
+				</h1>
+				<p>
+					Take a peek at some of my projects! Be sure to checkout my github if you are interested in seeing how the
+					magic happens!
+				</p>
+				
+				<project-card-section></project-card-section>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="experience" style="height: 35vh;"></div>
+	
+	<div class="section vertical-center" style="background-image: url('/assets/images/background/oak-flower.jpg')">
+		<div class="container">
+			<div class="gy-5">
+				<h1 class="section-title">
+					View My Experience
+				</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="awards" style="height: 35vh;"></div>
+
+	<div class="section vertical-center" style="background-image: url('/assets/images/background/mirror-flowers.jpg')">
+		<div class="container">
+			<div class="gy-5">
+				<h1 class="section-title">
+					Explore My Achievements
+				</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="contact" style="height: 35vh;"></div>
+
+	<div class="section vertical-center" style="background-image: url('/assets/images/background/sunflowers.jpg')">
+		<div class="container">
+			<div class="gy-5">
+				<h1 class="section-title">
+					Give Me a Call
+				</h1>
+				<p>
+					Well, we've made it to the end of my page, huh? Oh no... please don't cry... You know what?
+					if you want to stay in touch, feel free to contact me through any of these 
+					methods:
+				</p>
+
+
+
+				<p> 
+					I hope this makes you feel a bit better now! Here, take a few tissues for the road...
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" style="height: 35vh;"></div>
+
+	<div class="form-switch theme-mode-button">
+		<input class="form-check-input" type="checkbox" role="switch" id="themeSwitch" onchange="themeChange(event)" aria-checked="True">
+		<label class="form-check-label" for="darkMode" id="themeLabel">Dark Mode</label>
+		<span id="themeSymbol"></span>
+	</div>
 </body>
 </html>
