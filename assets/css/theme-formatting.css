@@ -32,6 +32,7 @@
     -moz-background-attachment: fixed;    /* For Firefox */
     -o-background-attachment: fixed;      /* For Opera */
     -ms-background-attachment: fixed;     /* For Internet Explorer */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .profile-pic {
