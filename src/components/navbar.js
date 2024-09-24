@@ -16,14 +16,14 @@ class NavBar extends HTMLElement {
 			name: 'Projects',
 			link: '#projects'
 		},
-		{
-			name: 'Experience',
-			link: '#experience'
-		},
-		{
-			name: 'Awards',
-			link: '#awards'
-		},
+		// {
+		// 	name: 'Experience',
+		// 	link: '#experience'
+		// },
+		// {
+		// 	name: 'Awards',
+		// 	link: '#awards'
+		// },
 		{
 			name: 'Contact',
 			link: '#contact'
