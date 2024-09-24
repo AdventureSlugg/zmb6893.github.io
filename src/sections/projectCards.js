@@ -15,7 +15,7 @@ class ProjectCards extends HTMLElement {
 		{
 			title: 'ApolloLink',
 			description: 'A web application that prempetively detects signs of disease from the user\'s smart watch',
-			link: 'https://github.com/zmb6893',
+			link: 'https://github.com/awb8593/HackHarvard',
 			linkTitle: 'Source Code',
 			image: '/assets/images/project/ApolloLink.jpg',
 			alt: 'Apollo Link Thumbnail'
@@ -23,7 +23,7 @@ class ProjectCards extends HTMLElement {
 		{
 			title: 'BrickVibes',
 			description: 'Detects the emotional state based on music trends of the user',
-			link: 'https://github.com/zmb6893',
+			link: 'https://github.com/maisha242/brickvibes',
 			linkTitle: 'Source Code',
 			image: '/assets/images/project/BrickVibes.jpg',
 			alt: 'BrickVibes Thumbnail'
