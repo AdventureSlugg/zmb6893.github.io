@@ -5,6 +5,14 @@ class ProjectCards extends HTMLElement {
 
 	projects = [
 		{
+			title: 'CodeRacer',
+			description: 'Improving typing and coding literacy all in one place!',
+			link: 'https://github.com/zmb6893/CodeRacer',
+			linkTitle: 'Source Code',
+			image: '/assets/images/project/CodeRacerDemo.gif',
+			alt: 'CodeRacer Thumbnail'
+		},
+		{
 			title: '3DSea',
 			description: 'A vast library of 3D web components, created using THREE.js',
 			link: 'https://github.com/zmb6893',
@@ -19,14 +27,6 @@ class ProjectCards extends HTMLElement {
 			linkTitle: 'Source Code',
 			image: '/assets/images/project/ApolloLink.jpg',
 			alt: 'Apollo Link Thumbnail'
-		},
-		{
-			title: 'BrickVibes',
-			description: 'Detects the emotional state based on music trends of the user',
-			link: 'https://github.com/maisha242/brickvibes',
-			linkTitle: 'Source Code',
-			image: '/assets/images/project/BrickVibes.jpg',
-			alt: 'BrickVibes Thumbnail'
 		},
 	]
 
