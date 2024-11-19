@@ -21,7 +21,8 @@ const themeChange = (event) => {
 	// 2. Change the label text of the toggle button
 	const themeKey = Number(event.target.checked);
 	const themeMode = themeModes[themeKey];
-	document.getElementById('themeLabel').textContent = themeMode.label;
+	const label = document.getElementById('themeLabel');
+	label.textContent = themeMode.label;
 
 	// 3. Change the bootstrap theme to the selected theme
 	const oppositeKey = Number(!themeKey)

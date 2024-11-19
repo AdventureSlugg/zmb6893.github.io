@@ -1,3 +1,17 @@
+@font-face {
+	font-family: retro;
+	src: url('/assets/fonts/Press_Start_2P/PressStart2P-Regular.ttf');
+}
+
+body {
+	font-family: 'retro';
+	font-size: .75rem;
+}
+
+body label {
+	font-size: .6rem;
+}
+
 .theme-mode-button {
 	bottom: 1rem;
 	position: fixed;
@@ -10,7 +24,8 @@
 }
 
 .jumbotron {
-	background-image: url('/assets/images/background/purple\ clouds.png');
+	background-color: #eeff00;
+	background-image: url(/assets/images/background/fish.gif);
 	opacity: 1;
 	height: 90vh;
 	background-repeat: no-repeat;
@@ -66,6 +81,13 @@
 	font-size: 4rem;
 	color:rgb(251, 255, 190);
 	font-weight:900;
+}
+
+.transparent-pane {
+	background-color: rgba(212, 0, 198, 0.8);
+	border-radius: 10px;
+	padding: 2rem;
+	word-wrap: anywhere;
 }
 
 .section-title {
