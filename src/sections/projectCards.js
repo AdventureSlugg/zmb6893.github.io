@@ -7,7 +7,7 @@ class ProjectCards extends HTMLElement {
 		{
 			title: 'CodeRacer',
 			description: 'Improving typing and coding literacy all in one place!',
-			link: 'https://github.com/zmb6893/CodeRacer',
+			link: 'https://github.com/AdventureSlugg/CodeRacer',
 			linkTitle: 'Source Code',
 			image: '/assets/images/project/CodeRacerDemo.gif',
 			alt: 'CodeRacer Thumbnail'
@@ -15,7 +15,7 @@ class ProjectCards extends HTMLElement {
 		{
 			title: '3DSea',
 			description: 'A vast library of 3D web components, created using THREE.js',
-			link: 'https://github.com/zmb6893',
+			link: 'https://github.com/AdventureSlugg/ThreeDSea',
 			linkTitle: 'Source Code',
 			image: '/assets/images/project/ThreeDSea.png',
 			alt: '3DSea Thumbnail'
