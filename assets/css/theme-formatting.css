@@ -6,6 +6,7 @@
 body {
 	font-family: 'retro';
 	font-size: .75rem;
+	scroll-behavior: smooth;
 }
 
 body label {
